@@ -1,0 +1,9 @@
+After=pigpiod.service
+
+[Service]
+WorkingDirectory=/home/pi/
+User=pi
+ExecStart=/bin/bash -c '/usr/bin/python3 /home/pi/apps/dht11/main.py > /home/pi/apps/logs/dht.log 2>&1'
+
+[Install]
+WantedBy=multi-user.target
