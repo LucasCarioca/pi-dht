@@ -21,4 +21,4 @@ while True:
     connection.commit()
     sys.stdout.write(f"temperature: {temp_c}*C\n")
     sys.stdout.write(f"humidity:    {humidity}%\n")
-    time.sleep(2)
+    time.sleep(30)

@@ -20,7 +20,7 @@ class sensor:
    """
    A class to read the DHTXX temperature/humidity sensors.
    """
-   def __init__(self, pi, gpio, model=DHT11, callback=None):
+   def __init__(self, pi, gpio, model=DHTAUTO, callback=None):
       """
       Instantiate with the Pi and the GPIO connected to the
       DHT temperature and humidity sensor.
